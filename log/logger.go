@@ -12,7 +12,8 @@ import (
 // ✅ লগ ফাইল এবং কনসোলে লগিং সেটআপ
 func init() {
 	// লগ ফাইল তৈরি / ওপেন করা (Append Mode)
-	fileName := fmt.Sprintf("log/app_%s.log", time.Now().Format("2006-01-02"))
+	// %s দিয়ে তারিখ ফরম্যাট করা হয়েছে (2006-01-02) এবং ফাইলের নাম তৈরি করা হয়েছে
+	fileName := fmt.Sprintf("log/app/app_%s.log", time.Now().Format("02-01-2006"))
 	logFile, err := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		fmt.Println("❌ Could not open log file:", err)

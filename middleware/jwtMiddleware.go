@@ -3,6 +3,7 @@ package middleware
 import (
 	"github.com/gofiber/fiber/v2"
 	jwtware "github.com/gofiber/jwt/v4"
+	"strings"
 )
 
 var SecretKey = []byte("your_secret_key")
@@ -21,10 +22,17 @@ func JWTMiddleware() fiber.Handler {
 			return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{"error": "Unauthorized"})
 		},
 		SuccessHandler: func(c *fiber.Ctx) error {
-			token := c.Get("Authorization")
-			// ✅ Blacklisted Token চেক
-			if blacklistedTokens[token] {
-				return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{"error": "Token is blacklisted"})
+			//token := c.Get("Authorization")
+			//// ✅ Blacklisted Token চেক
+			//if blacklistedTokens[token] {
+			//	return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{"error": "Token is blacklisted"})
+			//}
+			authHeader := c.Get("Authorization")
+			if strings.HasPrefix(authHeader, "Bearer ") {
+				token := strings.TrimPrefix(authHeader, "Bearer ")
+				if blacklistedTokens[token] {
+					return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{"error": "Token is blacklisted"})
+				}
 			}
 			return c.Next()
 		},
