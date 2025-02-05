@@ -1,11 +1,1 @@
 
-2025/02/05 17:11:46.837054 logger.go:44: [Info] ✅ Database connected successfully!
-2025/02/05 17:11:50.168905 logger.go:44: [Info] Users fetched successfully
-2025/02/05 17:11:53.871701 logger.go:44: [Info] User logged in successfullyThorat
-2025/02/05 17:42:44.345066 logger.go:44: [Info] User logged in successfullyThorat
-2025/02/05 17:43:39.872261 logger.go:44: [Info] User logged in successfullyThorat
-2025/02/05 17:43:41.112585 logger.go:44: [Info] User logged in successfullyThorat
-2025/02/05 17:44:00.140933 logger.go:44: [Info] ✅ Database connected successfully!
-2025/02/05 17:44:22.577400 logger.go:44: [Info] User logged in successfully Thorat
-2025/02/05 17:45:23.457680 logger.go:44: [Info] ✅ Database connected successfully!
-2025/02/05 17:45:26.332131 logger.go:44: [Info] User logged in successfully Thorat

@@ -13,7 +13,6 @@ func SetupRoutes(app *fiber.App) {
 
 	// User CRUD Routes (JWT Protected)
 	api := app.Group("/api", middleware.JWTMiddleware())
-
 	api.Get("/users", controllers.GetUsers)
 	api.Get("/users/:id", controllers.GetUser)
 	api.Put("/users/:id", controllers.UpdateUser)

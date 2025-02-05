@@ -1,7 +1,6 @@
 package database
 
 import (
-	"fmt"
 	logger "go-fiber-jwt-crud/log"
 	"go-fiber-jwt-crud/models"
 	"gorm.io/driver/mysql"
@@ -49,9 +48,11 @@ func ConnectDB() {
 	logger.Success("✅ Database connected successfully!")
 	/*সংযোগ সফল হলে "✅ Database connected successfully!" মেসেজ প্রিন্ট করবে।*/
 
+	//drop model
+	DB.Migrator().DropTable(&models.User{})
 	// Auto Migrate the User model
 	DB.AutoMigrate(&models.User{})
-	fmt.Println("✅ Database migration completed!")
+	// fmt.Println("✅ Database migration completed!")
 	/*
 		AutoMigrate() ফাংশন models.User{} কে অটো-মাইগ্রেট করবে।
 		যদি users টেবিল না থাকে, তাহলে এটি স্বয়ংক্রিয়ভাবে তৈরি করবে।

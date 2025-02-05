@@ -8,6 +8,7 @@ import (
 	"go-fiber-jwt-crud/middleware"
 	"go-fiber-jwt-crud/models"
 	"golang.org/x/crypto/bcrypt"
+	"strconv"
 	"time"
 )
 
@@ -23,10 +24,26 @@ func Register(c *fiber.Ctx) error {
 
 	}
 	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(data["password"]), bcrypt.DefaultCost)
+
+	// Convert age from string to int
+	age, err := strconv.Atoi(data["age"])
+	if err != nil {
+		logger.Error("Invalid age format", err)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": "Invalid age format"})
+	}
 	user := models.User{
-		Name:     data["name"],
-		Email:    data["email"],
+		Name:    data["name"],
+		Phone:   data["phone"],
+		Address: data["address"],
+		Gender:  data["gender"],
+		Email:   data["email"],
+		// age from request
+		Age:      age,
 		Password: string(hashedPassword),
+	}
+	if err := database.DB.Where("email = ?", data["email"]).First(&user).Error; err == nil {
+		logger.Error("User already exists", nil)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": "User already exists"})
 	}
 	database.DB.Create(&user)
 	if err := database.DB.Error; err != nil {
