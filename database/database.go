@@ -1,10 +1,12 @@
 package database
 
 import (
+	"github.com/joho/godotenv"
 	logger "go-fiber-jwt-crud/log"
 	"go-fiber-jwt-crud/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"os"
 )
 
 /*
@@ -22,7 +24,16 @@ var DB *gorm.DB //DB হলো গ্লোবাল ভেরিয়েবল
 
 func ConnectDB() {
 	// ✅ Use correct MySQL DSN format
-	dsn := "root:@tcp(127.0.0.1:3306)/db_golang?charset=utf8mb4&parseTime=True&loc=Local"
+
+	//dsn := "root:@tcp(127.0.0.1:3306)/db_golang?charset=utf8mb4&parseTime=True&loc=Local"
+	env := godotenv.Load()
+	if env != nil {
+		logger.Error("Error loading .env file", env)
+	}
+	localhost := os.Getenv("APP_HOST")
+	port := os.Getenv("DB_PORT")
+	databaseName := os.Getenv("DB_NAME")
+	dsn := "root:@tcp(" + localhost + ":" + port + ")/" + databaseName
 	/*
 		dsn (Data Source Name) হল MySQL কানেকশন স্ট্রিং, যেখানে:
 

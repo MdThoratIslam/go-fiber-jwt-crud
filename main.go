@@ -2,8 +2,11 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/joho/godotenv"
 	"go-fiber-jwt-crud/database"
+	logger "go-fiber-jwt-crud/log"
 	"go-fiber-jwt-crud/routes"
+	"os"
 )
 
 func main() {
@@ -14,7 +17,18 @@ func main() {
 
 	// Setup Routes
 	routes.SetupRoutes(app)
+	// app_host from .env
+	// app_port from .env
+	// db_name from .env
 
 	// Start Server
-	app.Listen(":8080")
+	//app.Listen(":3000")
+	env := godotenv.Load()
+	if env != nil {
+		logger.Error("Error loading .env file", env)
+	}
+	app_host := os.Getenv("APP_HOST")
+	app_port := os.Getenv("APP_PORT")
+	app.Listen(app_host + ":" + app_port)
+
 }
