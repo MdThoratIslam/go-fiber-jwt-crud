@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v4"
+	"go-fiber-jwt-crud/BaseResponceForApi"
 	"go-fiber-jwt-crud/database"
 	logger "go-fiber-jwt-crud/log"
 	"go-fiber-jwt-crud/middleware"
@@ -51,8 +52,17 @@ func Register(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 
 	}
-	logger.Success("User created successfully")
-	return c.JSON(user)
+	logger.Success("User created successfully " + user.Name + " " + user.Email + " " + user.Phone + " " + user.Address)
+	response := map[string]interface{}{
+		"message": "User created successfully",
+		"Name":    user.Name,
+		"Email":   user.Email,
+		"Phone":   user.Phone,
+		"Address": user.Address,
+		"Gender":  user.Gender,
+		"Age":     user.Age,
+	}
+	return c.JSON(response)
 }
 
 func Login(c *fiber.Ctx) error {
@@ -76,8 +86,19 @@ func Login(c *fiber.Ctx) error {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"id":  user.ID,
 		"Nme": user.Name,
-		"exp": time.Now().Add(time.Hour * 24).Unix(),
+		"exp": time.Now().Add(time.Minute * 2).Unix(),
 	})
+	/*
+		3️⃣ JWT Expiry Time ("exp")
+
+		"exp": time.Now().Add(time.Hour * 24).Unix()
+
+		✅ time.Now() → বর্তমান সময় নেয়
+		✅ time.Hour * 2 → ২৪ ঘণ্টা যোগ করে
+		✅ .Unix() → UNIX টাইমস্ট্যাম্পে রূপান্তর করে (seconds since 1970)
+
+		🔹 এই "exp" (expiry time) ক্লেইম সেট করার ফলে JWT টোকেন ২৪ ঘণ্টা পরে অবৈধ হয়ে যাবে।
+	*/
 
 	t, err := token.SignedString(middleware.SecretKey)
 	if err != nil {
@@ -86,5 +107,19 @@ func Login(c *fiber.Ctx) error {
 	}
 	logger.Success("User logged in successfully " + user.Name)
 
-	return c.JSON(fiber.Map{"token": t})
+	apiResponse := BaseResponceForApi.ApiResponse{
+		Message: "User logged in successfully",
+		Status:  "success",
+		Data: map[string]interface{}{
+			"token":  t,
+			"Name":   user.Name,
+			"Email":  user.Email,
+			"Phone":  user.Phone,
+			"Age":    user.Age,
+			"Gender": user.Gender,
+		},
+	}
+	return c.JSON(apiResponse)
+	//return c.JSON(fiber.Map{"token": t})
+	//return c.JSON(fiber.Map{"token": t, "message": apiresponse})
 }
