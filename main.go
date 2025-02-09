@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/joho/godotenv"
 	"go-fiber-jwt-crud/database"
 	logger "go-fiber-jwt-crud/log"
@@ -14,6 +15,14 @@ func main() {
 
 	// Connect to Database
 	database.ConnectDB()
+
+	// Enable CORS
+	app.Use(cors.New(cors.Config{
+		AllowOrigins:     "*", // Allow all origins, change to specific domain in production
+		AllowMethods:     "GET,POST,PUT,DELETE",
+		AllowHeaders:     "Origin, Content-Type, Accept, Authorization",
+		AllowCredentials: true, // Allow cookies & authentication headers
+	}))
 
 	// Setup Routes
 	routes.SetupRoutes(app)

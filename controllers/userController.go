@@ -10,9 +10,22 @@ import (
 	"time"
 )
 
+// Define a struct for response excluding password
+type UserResponse struct {
+	Name    string `json:"name"`
+	Phone   string `json:"phone"`
+	Address string `json:"address"`
+	Gender  string `json:"gender"`
+	Email   string `json:"email"`
+	Age     int    `json:"age"`
+}
+
 func GetUsers(c *fiber.Ctx) error {
 	var users []models.User
-	database.DB.Find(&users)
+	// Fetch only selected columns
+	result := database.DB.Select("id", "name", "email", "phone", "address", "age", "gender").Find(&users)
+
+	// Check if no users found
 	if len(users) == 0 {
 		logger.Warn("No users found")
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
@@ -20,10 +33,32 @@ func GetUsers(c *fiber.Ctx) error {
 			"message": "No users available in the database",
 		})
 	}
-	logger.Success("Users fetched successfully")
-	return c.JSON(users)
-}
 
+	// Check for database error
+	if result.Error != nil {
+		logger.Error("Failed to fetch users", result.Error)
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error":   "Failed to fetch users",
+			"details": result.Error.Error(),
+		})
+	}
+
+	// Map users to response struct to exclude password
+	var userResponses []UserResponse
+	for _, user := range users {
+		userResponses = append(userResponses, UserResponse{
+			Name:    user.Name,
+			Phone:   user.Phone,
+			Address: user.Address,
+			Gender:  user.Gender,
+			Email:   user.Email,
+			Age:     user.Age,
+		})
+	}
+
+	logger.Success("Users fetched successfully")
+	return c.JSON(userResponses)
+}
 func GetUser(c *fiber.Ctx) error {
 	id := c.Params("id")
 	var user models.User
@@ -38,7 +73,6 @@ func GetUser(c *fiber.Ctx) error {
 	logger.Success("User fetched successfully")
 	return c.JSON(user)
 }
-
 func UpdateUser(c *fiber.Ctx) error {
 	id := c.Params("id")
 	var user models.User
@@ -53,7 +87,6 @@ func UpdateUser(c *fiber.Ctx) error {
 	logger.Success("User updated successfully")
 	return c.JSON(user)
 }
-
 func DeleteUser(c *fiber.Ctx) error {
 	id := c.Params("id")
 	database.DB.Delete(&models.User{}, id)
@@ -67,7 +100,6 @@ func DeleteUser(c *fiber.Ctx) error {
 	logger.Success("User deleted successfully with ID: " + id)
 	return c.SendString("User Deleted")
 }
-
 func GetLog(c *fiber.Ctx) error {
 	date := c.Query("date", time.Now().Format("2006-01-02"))
 	// ✅ আজকের লগ ফাইলের নাম সেট করা (সঠিক ফরম্যাট)

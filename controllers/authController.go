@@ -25,7 +25,6 @@ func Register(c *fiber.Ctx) error {
 
 	}
 	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(data["password"]), bcrypt.DefaultCost)
-
 	// Convert age from string to int
 	age, err := strconv.Atoi(data["age"])
 	if err != nil {
@@ -64,7 +63,6 @@ func Register(c *fiber.Ctx) error {
 	}
 	return c.JSON(response)
 }
-
 func Login(c *fiber.Ctx) error {
 	var data map[string]string
 	if err := c.BodyParser(&data); err != nil {

@@ -3,7 +3,6 @@ package database
 import (
 	"github.com/joho/godotenv"
 	logger "go-fiber-jwt-crud/log"
-	"go-fiber-jwt-crud/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"os"
@@ -60,9 +59,9 @@ func ConnectDB() {
 	/*সংযোগ সফল হলে "✅ Database connected successfully!" মেসেজ প্রিন্ট করবে।*/
 
 	//drop model
-	DB.Migrator().DropTable(&models.User{})
+	//DB.Migrator().DropTable(&models.User{})
 	// Auto Migrate the User model
-	DB.AutoMigrate(&models.User{})
+	//DB.AutoMigrate(&models.User{})
 	// fmt.Println("✅ Database migration completed!")
 	/*
 		AutoMigrate() ফাংশন models.User{} কে অটো-মাইগ্রেট করবে।

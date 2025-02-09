@@ -1,0 +1,67 @@
+2025/02/09 11:16:45.935108 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:16:52.171737 logger.go:44: [Info] User created successfully Thorat thorat.pwad03@gmail.com 01322920575 34/4, Ahammedbagh
+2025/02/09 11:16:54.312664 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:17:04.663891 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:18 AM
+2025/02/09 11:17:04.664398 logger.go:44: [Info] Users fetched successfully
+2025/02/09 11:28:03.227940 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:28:08.772213 logger.go:44: [Info] User created successfully Thorat thorat.pwad03@gmail.com 01322920575 34/4, Ahammedbagh
+2025/02/09 11:28:10.471750 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:28:22.263210 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:30 AM
+2025/02/09 11:29:39.698327 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:29:42.938735 logger.go:44: [Info] User created successfully Thorat thorat.pwad03@gmail.com 01322920575 34/4, Ahammedbagh
+2025/02/09 11:29:44.588177 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:29:47.408334 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:30 AM
+2025/02/09 11:30:10.903309 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:30:18.906986 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:30:28.303837 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:32 AM
+2025/02/09 11:36:36.218977 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:36:44.267804 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:36:58.018803 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:38 AM
+2025/02/09 11:36:58.019605 logger.go:44: [Info] Log file name set
+2025/02/09 11:36:58.020119 logger.go:44: [Info] Log data printed in console
+2025/02/09 11:37:08.883491 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:38 AM
+2025/02/09 11:37:08.884015 logger.go:44: [Info] Users fetched successfully
+2025/02/09 11:37:37.777075 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 11:37:41.416644 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 11:37:51.788995 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 11:39 AM
+2025/02/09 11:37:51.789498 logger.go:44: [Info] Users fetched successfully
+2025/02/09 11:39:37.378538 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 12:02:54.403918 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 12:02:55.520118 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 12:03:10.625483 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 12:04 PM
+2025/02/09 12:03:10.626549 logger.go:44: [Info] Users fetched successfully
+2025/02/09 12:10:00.571055 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 12:10:03.066017 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 12:10:12.396779 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 12:12 PM
+2025/02/09 12:10:12.398892 logger.go:44: [Info] Users fetched successfully
+2025/02/09 12:10:15.212169 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 12:12 PM
+2025/02/09 12:10:15.213849 logger.go:44: [Info] Users fetched successfully
+2025/02/09 12:13:51.314224 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 12:13:52.166698 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 12:14:00.628926 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 12:15 PM
+2025/02/09 12:14:00.631023 logger.go:44: [Info] Users fetched successfully
+2025/02/09 12:15:09.479819 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 12:15:10.719592 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 12:15:21.428362 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 12:17 PM
+2025/02/09 12:15:21.429336 logger.go:44: [Info] Users fetched successfully
+2025/02/09 12:52:05.282749 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 14:14:41.905068 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 14:16:05.125531 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:16 PM
+2025/02/09 14:16:05.129182 logger.go:44: [Info] Users fetched successfully
+2025/02/09 14:18:28.267084 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 14:37:00.957209 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 14:37:02.497199 logger.go:44: [Info] User logged in successfully Thorat
+2025/02/09 14:37:13.365346 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:39 PM
+2025/02/09 14:37:13.367973 logger.go:44: [Info] Users fetched successfully
+2025/02/09 14:37:30.456408 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 14:37:30.946764 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:39 PM
+2025/02/09 14:37:30.957809 logger.go:44: [Info] Users fetched successfully
+2025/02/09 14:37:32.503004 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:39 PM
+2025/02/09 14:37:32.503518 logger.go:44: [Info] Users fetched successfully
+2025/02/09 14:37:34.039481 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:39 PM
+2025/02/09 14:37:34.040016 logger.go:44: [Info] Users fetched successfully
+2025/02/09 14:37:36.882048 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 09-Feb-2025 02:39 PM
+2025/02/09 14:37:36.883875 logger.go:44: [Info] Users fetched successfully
+2025/02/09 16:01:22.487587 logger.go:44: [Info] User created successfully Simone Padilla bymizemunu@mailinator.com 01517123534 Eligendi ipsa ea si
+2025/02/09 16:26:19.145544 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/09 16:28:02.910995 logger.go:44: [Info] ✅ Database connected successfully!
