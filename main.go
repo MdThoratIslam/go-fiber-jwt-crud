@@ -15,7 +15,6 @@ func main() {
 
 	// Connect to Database
 	database.ConnectDB()
-
 	// Enable CORS
 	app.Use(cors.New(cors.Config{
 		AllowOrigins:     "*", // Allow all origins, change to specific domain in production
