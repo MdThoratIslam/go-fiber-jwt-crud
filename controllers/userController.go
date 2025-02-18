@@ -4,10 +4,12 @@ package controllers
 import (
 	"fmt"
 	"github.com/gofiber/fiber/v2"
+	"go-fiber-jwt-crud/BaseResponceForApi"
 	"go-fiber-jwt-crud/database"
 	logger "go-fiber-jwt-crud/log"
 	"go-fiber-jwt-crud/models"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -89,21 +91,41 @@ func GetUsers(c *fiber.Ctx) error {
 	//✅ যদি ডাটাবেস ত্রুটি (error) থাকে, তাহলে ভুল বার্তা রিটার্ন করবে।
 
 	// Map users to response struct to exclude password
-	var userResponses []UserResponse
-	for _, user := range users {
-		userResponses = append(userResponses, UserResponse{
-			Name:    user.Name,
-			Phone:   user.Phone,
-			Address: user.Address,
-			Gender:  user.Gender,
-			Email:   user.Email,
-			Age:     user.Age,
-		})
-	}
+	//var userResponses []UserResponse
+	//for _, user := range users {
+	//	userResponses = append(userResponses, UserResponse{
+	//		Name:    user.Name,
+	//		Phone:   user.Phone,
+	//		Address: user.Address,
+	//		Gender:  user.Gender,
+	//		Email:   user.Email,
+	//		Age:     user.Age,
+	//	})
+	//}
 	//✅ পাসওয়ার্ড বাদ দিয়ে ইউজারের তথ্য UserResponse স্ট্রাকচারে সংরক্ষণ করা হয়।
 
+	apiResponse := BaseResponceForApi.ApiResponse{
+		Message: "Users fetched successfully",
+		Status:  "success",
+	}
+
+	// Create an array to hold user data
+	var userData []map[string]interface{}
+
+	for _, user := range users {
+		userData = append(userData, map[string]interface{}{
+			"Name":   user.Name,
+			"Email":  user.Email,
+			"Phone":  user.Phone,
+			"Age":    user.Age,
+			"Genger": user.Gender,
+		})
+	}
+	// Assign user data to response
+	apiResponse.Data = userData
 	logger.Success("Users fetched successfully")
-	return c.JSON(userResponses)
+	return c.JSON(apiResponse)
+	//return c.JSON(userResponses)
 }
 func GetUser(c *fiber.Ctx) error {
 	id := c.Params("id")
@@ -121,8 +143,20 @@ func GetUser(c *fiber.Ctx) error {
 		})
 	}
 	logger.Success("User fetched successfully")
-	return c.JSON(user)
+	apiResponse := BaseResponceForApi.ApiResponse{
+		Message: "User fetched successfully",
+		Status:  "success",
+		Data: map[string]interface{}{
+			"Name":   user.Name,
+			"Email":  user.Email,
+			"Phone":  user.Phone,
+			"Age":    user.Age,
+			"Genger": user.Gender,
+		},
+	}
+	return c.JSON(apiResponse)
 }
+
 func UpdateUser(c *fiber.Ctx) error {
 	id := c.Params("id")
 	var user models.User
@@ -136,7 +170,18 @@ func UpdateUser(c *fiber.Ctx) error {
 
 	database.DB.Save(&user)
 	logger.Success("User updated successfully")
-	return c.JSON(user)
+	apiResponse := BaseResponceForApi.ApiResponse{
+		Message: "User updated successfully",
+		Status:  "success",
+		Data: map[string]interface{}{
+			"Name":   user.Name,
+			"Email":  user.Email,
+			"Phone":  user.Phone,
+			"Age":    user.Age,
+			"Genger": user.Gender,
+		},
+	}
+	return c.JSON(apiResponse)
 }
 func DeleteUser(c *fiber.Ctx) error {
 	id := c.Params("id")
@@ -158,7 +203,6 @@ func GetLog(c *fiber.Ctx) error {
 	// ✅ আজকের লগ ফাইলের নাম সেট করা (সঠিক ফরম্যাট)
 	fileName := fmt.Sprintf("log/app/app_%s.log", date)
 	logger.Success("Log file name set")
-
 	// ✅ চেক করুন যে লগ ফাইল আছে কি না
 	if _, err := os.Stat(fileName); os.IsNotExist(err) {
 		fmt.Println("❌ Log file does not exist:", fileName)
@@ -169,7 +213,6 @@ func GetLog(c *fiber.Ctx) error {
 			"message": "No logs available for today",
 		})
 	}
-
 	// ✅ লগ ফাইল থেকে ডাটা রিড
 	data, err := os.ReadFile(fileName)
 	if err != nil {
@@ -180,15 +223,16 @@ func GetLog(c *fiber.Ctx) error {
 			"details": err.Error(),
 		})
 	}
+	// ✅ \n রিমুভ করুন
+	cleanedData := strings.ReplaceAll(string(data), "\n", "\n")
 
-	// ✅ লগ ডাটা কনসোলে প্রিন্ট করুন
-	logger.Success("Log data printed in console")
 	// ✅ JSON রেসপন্স ফেরত দিন
-	/*return c.JSON(fiber.Map{
-		"status":  "success",
-		"message": "Log data printed in console",
-		"file":    fileName,
-		"data":    string(data),
-	})*/
-	return c.SendString(string(data))
+	apiResponse := BaseResponceForApi.ApiResponse{
+		Message: "Log data fetched successfully",
+		Status:  "success",
+		Data:    cleanedData,
+	}
+	// ✅ লগ ডাটা কনসোলে প্রিন্ট করুন
+	logger.Success("Log data fetched successfully")
+	return c.JSON(apiResponse)
 }

@@ -11,16 +11,28 @@ import (
 )
 
 func main() {
+
 	app := fiber.New()
 
+	if err := godotenv.Load(); err != nil {
+		logger.Error("Error loading .env file", err)
+	}
+
+	port := os.Getenv("APP_PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	// server run successfully messagestore in log file
+	logger.Success("Server is running on port: " + os.Getenv("APP_PORT"))
 	// Connect to Database
 	database.ConnectDB()
 	// Enable CORS
 	app.Use(cors.New(cors.Config{
-		AllowOrigins:     "*", // Allow all origins, change to specific domain in production
-		AllowMethods:     "GET,POST,PUT,DELETE",
+		AllowOrigins:     os.Getenv("FRONTEND_URL"), // Use FRONTEND_URL from .env
+		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
 		AllowHeaders:     "Origin, Content-Type, Accept, Authorization",
-		AllowCredentials: true, // Allow cookies & authentication headers
+		AllowCredentials: true,
 	}))
 
 	// Setup Routes
@@ -38,5 +50,4 @@ func main() {
 	app_host := os.Getenv("APP_HOST")
 	app_port := os.Getenv("APP_PORT")
 	app.Listen(app_host + ":" + app_port)
-
 }

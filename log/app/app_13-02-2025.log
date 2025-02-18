@@ -1,0 +1,13 @@
+2025/02/13 14:02:53.319596 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/13 14:02:53.322726 logger.go:44: [Info] Server is running on port: 8080
+2025/02/13 14:02:53.329585 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/13 14:03:08.285902 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 03:31 PM
+2025/02/13 14:03:08.289947 logger.go:44: [Info] Users fetched successfully
+2025/02/13 14:03:09.419949 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 03:31 PM
+2025/02/13 14:03:09.419949 logger.go:44: [Info] Users fetched successfully
+2025/02/13 14:03:09.987654 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 03:31 PM
+2025/02/13 14:03:09.988157 logger.go:44: [Info] Users fetched successfully
+2025/02/13 14:03:10.455076 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 03:31 PM
+2025/02/13 14:03:10.455076 logger.go:44: [Info] Users fetched successfully
+2025/02/13 14:03:11.208114 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 03:31 PM
+2025/02/13 14:03:11.208628 logger.go:44: [Info] Users fetched successfully

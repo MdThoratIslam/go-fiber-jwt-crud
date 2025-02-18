@@ -27,7 +27,7 @@ func init() {
 	log.SetLevel(log.LevelInfo)
 
 	// ✅ লগিং শুরু
-	// log.Info("🚀 Logger initialized successfully!")
+	log.Info("🚀 Logger initialized successfully!")
 }
 
 // ✅ Custom Error log function

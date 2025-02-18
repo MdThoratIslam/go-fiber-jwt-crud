@@ -11,13 +11,21 @@ func SetupRoutes(app *fiber.App) {
 	app.Post("/register", controllers.Register)
 	app.Post("/login", controllers.Login)
 
-	// User CRUD Routes (JWT Protected)
+	/*********************************************************************
+	User CRUD Routes (JWT Protected)
+	**********************************************************************/
 	api := app.Group("/api", middleware.JWTMiddleware())
+
 	api.Get("/users", controllers.GetUsers)
 	api.Get("/users/:id", controllers.GetUser)
 	api.Put("/users/:id", controllers.UpdateUser)
 	api.Delete("/users/:id", controllers.DeleteUser)
 
 	api.Get("/logs", controllers.GetLog)
+
 	api.Post("/logout", middleware.Logout)
+
+	/***********************************************************************
+	User CRUD Routes (JWT Protected)
+	*************************************************************************/
 }

@@ -1,0 +1,173 @@
+2025/02/17 15:32:09.438106 logger.go:44: [Info] User logged in successfully: Thorat 2											
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODQ4NDksImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.a1kiXVmJO3vFbyHDgxg1s3FoP4Gcn_toBJbl2-YpJJc											
+Expiry: 2025-02-17 15:34:09											
+Email: thorat.pwad03@gmail.com
+2025/02/17 15:34:25.417720 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:34:25.420802 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:34:25.428051 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:34:28.976087 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODQ5ODgsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.2OoIqaV1MT8HUPol3At3M-rOFhXzxcVB0xSKRSf6HRU
+Expiry: 2025-02-17 15:36:28
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: 
+2025/02/17 15:35:22.383464 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:35:22.387063 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:35:22.394492 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:35:23.753960 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODUwNDMsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.xxtJORvT8UQNSp9PNtgxw08i4QLlka_dF3x5Usq8cRQ
+Expiry: 2025-02-17 15:37:23
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:40:56.884673 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODUzNzYsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.oRKc--9hdsNaroi4Q3K3xg-jquOuhNKaEzdZSCd6xxc
+Expiry: 2025-02-17 15:42:56
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:44:48.780303 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU2MDgsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.TgMBKPQ_Owpb_grIbK5h4v3RrJOLEW3ga6iaCkADYdM
+Expiry: 2025-02-17 15:46:48
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:45:21.571803 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:45:21.575934 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:45:21.585586 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:45:23.360477 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU2NDMsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.HjOkxCFK6KT3cYrFQ-EOeBr7SWrPtmz3kfY33K2Aimg
+Expiry: 2025-02-17 15:47:23 +06 +0600
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:45:44.965239 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:45:44.968849 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:45:44.975750 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:45:46.709228 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU2NjYsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.fmnKc3GtRZun1cIYuDtZOProc3jC55HEjuw6Nwc249o
+Expiry: 2025-02-17 46:47:46 AM +06 +0600
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:46:09.154484 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:46:09.157566 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:46:09.163759 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:46:10.955479 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU2OTAsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.evFU0TfFr_Gs5y2UG8KTV4GzbYVDc-2SUlTPFutgwPc
+Expiry: 2025-02-17 15:48:10 AM +06 +0600
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:47:06.578379 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:47:06.582374 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:47:06.592959 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:47:07.584416 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU3NDcsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.PU7tZJSR-S6D1GzCoD716frZCCsPDrhMkw9hBWASw6o
+Expiry: 2025-02-17 03:49:07 PM +06 +0600
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 15:47:23.436673 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 15:47:23.440840 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 15:47:23.448101 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 15:47:24.856511 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODU3NjQsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.Pu8Qb1TPYgaxJozCzHQE7bHo22dKYEucSC-I2leOidY
+Expiry: 2025-02-17 03:49:24 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 16:00:10.202194 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:00:10.205871 logger.go:44: [Info] Server is running on localhost:8080
+2025/02/17 16:00:10.246261 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:00:14.247829 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODY1MzQsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.a4nilN46a4uAluTASsGeXGZ_VOtkeXmprZnTnMnUOQY
+Expiry: 2025-02-17 04:02:14 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 16:01:14.118392 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:02 PM
+2025/02/17 16:01:22.699135 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:01:22.702219 logger.go:44: [Info] Server is running on localhost:8080
+2025/02/17 16:01:22.709565 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:01:24.498265 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:02 PM
+2025/02/17 16:15:12.489479 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:15:12.493072 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 16:15:12.502424 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:32:25.978365 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODg0NjUsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.LOVXd_4ZQSgHt5-kKL6WfvyqEC0ez1TWz_ACAYZB4AE
+Expiry: 2025-02-17 04:34:25 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 16:32:37.320081 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:32:37.321755 logger.go:44: [Info] Users fetched successfully
+2025/02/17 16:32:40.859077 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:32:40.859581 logger.go:44: [Info] User fetched successfully
+2025/02/17 16:32:42.808547 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:32:42.814053 logger.go:44: [Info] User updated successfully
+2025/02/17 16:32:45.166523 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:32:45.166523 logger.go:44: [Info] Log file name set
+2025/02/17 16:32:45.168067 logger.go:44: [Info] Log data printed in console
+2025/02/17 16:33:45.701237 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:33:45.702274 logger.go:44: [Info] Log file name set
+2025/02/17 16:33:45.702803 logger.go:44: [Info] Log data printed in console
+2025/02/17 16:34:16.723223 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:34:16.729515 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 16:34:16.745006 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:34:18.458019 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:34 PM
+2025/02/17 16:34:18.458019 logger.go:44: [Info] Log file name set
+2025/02/17 16:34:18.458811 logger.go:44: [Info] Log data printed in console
+2025/02/17 16:34:40.236332 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODg2MDAsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.31I_W26jY5UEI0EGPti-0aEwGjNKsOAbP1Q4pUN2fFs
+Expiry: 2025-02-17 04:36:40 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 16:34:50.343710 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:36 PM
+2025/02/17 16:34:50.343710 logger.go:44: [Info] Log file name set
+2025/02/17 16:34:50.343710 logger.go:44: [Info] Log data printed in console
+2025/02/17 16:38:34.617314 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:38:34.621099 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 16:38:34.628460 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:38:37.656832 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk3ODg4MzcsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.qzGvZybN_OIT4XDhnhVnVvNIq0q1fpy99U7g59guxGA
+Expiry: 2025-02-17 04:40:37 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
+2025/02/17 16:38:46.122539 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:40 PM
+2025/02/17 16:38:46.122539 logger.go:44: [Info] Log file name set
+2025/02/17 16:38:46.123052 logger.go:44: [Info] Log data fetched successfully
+2025/02/17 16:39:28.704866 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/17 16:39:28.708961 logger.go:44: [Info] Server is running on port: 8080
+2025/02/17 16:39:28.720052 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/17 16:39:30.283689 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 17-Feb-2025 04:40 PM
+2025/02/17 16:39:30.284193 logger.go:44: [Info] Log file name set
+2025/02/17 16:39:30.286779 logger.go:44: [Info] Log data fetched successfully

@@ -1,0 +1,11 @@
+2025/02/18 12:01:06.840191 logger.go:30: [Info] 🚀 Logger initialized successfully!
+2025/02/18 12:01:06.844905 logger.go:44: [Info] Server is running on port: 8080
+2025/02/18 12:01:06.853369 logger.go:44: [Info] ✅ Database connected successfully!
+2025/02/18 12:01:55.885840 logger.go:44: [Info] User logged in successfully !!!
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk4NTg2MzUsImlkIjoxLCJuYW1lIjoiVGhvcmF0IDIifQ.91sjqaUC8zQsXGpsBdSqK7Oayqh8-FXa1HxCG5NxT2U
+Expiry: 2025-02-18 12:03:55 PM
+Name : Thorat 2
+Email: thorat.pwad03@gmail.com
+Phone: 01517123534
+Age: 20
+Gender: Male
