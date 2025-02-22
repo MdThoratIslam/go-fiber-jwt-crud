@@ -1,7 +1,0 @@
-2025/02/12 13:22:59.109604 logger.go:44: [Info] Server is running on port: 8080
-2025/02/12 13:22:59.116943 logger.go:44: [Info] ✅ Database connected successfully!
-2025/02/12 13:23:11.891487 logger.go:44: [Info] Server is running on port: 8080
-2025/02/12 13:23:11.898323 logger.go:44: [Info] ✅ Database connected successfully!
-2025/02/12 14:26:16.742913 logger.go:44: [Info] Token Parsed Successfully in JWTMiddleware Middleware: Expiry Time: 13-Feb-2025 11:52 AM
-2025/02/12 14:26:16.748582 logger.go:44: [Info] Log file name set
-2025/02/12 14:26:16.749586 logger.go:44: [Info] Log data printed in console
